@@ -16,10 +16,10 @@ export default function Hero() {
                 </h3>
                 {isHover && (
                   <div className="row">
-                    <figure className="col-sm-6">
+                    <figure className="col-lg-6">
                       <img src={dongiu} className="img-fluid mt-3" />
                     </figure>
-                    <figure className="col-sm-6">
+                    <figure className="col-lg-6">
                       <img src={donsimo} className="img-fluid mt-3" />
                     </figure>
                   </div>
@@ -42,6 +42,7 @@ export default function Hero() {
                   >
                     indicazioni stradali
                   </a>).<br />
+                  <br />
                   <b>La cerimonia inizia alle 11:00</b>, Alice permettendo.
                 </p>
 

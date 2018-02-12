@@ -20,6 +20,7 @@
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-sass": "^1.0.16",
     "gauge": "^2.7.4",
+    "immutable": "^3.8.2",
     "instagram.css": "^0.1.3",
     "jsprim": "^2.0.0",
     "node-sass": "^4.7.2",

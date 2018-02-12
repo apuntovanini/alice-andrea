@@ -13,11 +13,13 @@
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-sass": "^1.0.16",
     "instagram.css": "^0.1.3",
+    "node-sass": "^4.7.2",
     "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.0",
     "react-powerplug": "^0.1.4",
     "react-scroll": "^1.7.6",
-    "sntp": "^3.0.1"
+    "sntp": "^3.0.1",
+    "sshpk": "^1.13.1"
   },
   "keywords": [
     "gatsby"

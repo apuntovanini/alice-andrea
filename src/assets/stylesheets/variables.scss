@@ -1,0 +1,109 @@
+// Variables
+
+// Color system
+// $theme-colors: (primary: #ec8447);
+// Options
+
+$enable-caret: true;
+
+// Spacing
+$spacer: 1rem;
+$sizes: (
+  10: 10%,
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  90: 90%,
+  100: 100%
+);
+
+// Body
+
+// Links
+
+// Paragraphs
+
+// Grid breakpoints
+
+// Grid containers
+
+// Grid columns
+
+$grid-gutter-width: 3rem;
+
+// Components
+
+// Fonts
+// $font-size-base: 1.1rem;
+$font-family-sans-serif: 'Avenir', 'Muli', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+
+// Tables
+
+// Buttons
+$btn-font-weight: 500;
+$input-btn-padding-y: 0.75rem;
+$btn-line-height-sm: normal;
+
+// Allows for customizing button radius independently from global border radius
+
+// Forms
+
+$form-group-margin-bottom: $grid-gutter-width / 2;
+$input-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+$custom-file-text: (en: 'Browse') !default;
+$input-padding-y: 1rem;
+$input-padding-x: 1rem;
+$form-text-margin-top: 0.5rem;
+
+// Form validation
+
+// Dropdowns
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+// Navs
+$nav-link-padding-y: 0.75rem;
+
+// Navbar
+$navbar-padding-y: $spacer;
+$navbar-toggler-padding-x: 0;
+
+$navbar-dark-toggler-border-color: transparent;
+$navbar-light-toggler-border-color: transparent;
+
+// Pagination
+
+// Jumbotron
+
+// Cards
+
+// Tooltips
+
+// Popovers
+
+// Badges
+
+// Modals
+
+// Alerts
+
+// Progress bars
+
+// List group
+
+// Image thumbnails
+
+// Figures
+
+// Breadcrumbs
+
+// Carousel
+
+// Close
+
+// Code

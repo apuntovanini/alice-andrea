@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "assert-plus": "^1.0.0",
     "boom": "^7.1.1",
     "bootstrap": "^4.0.0",
     "cryptiles": "^4.1.1",

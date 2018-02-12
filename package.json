@@ -14,7 +14,8 @@
     "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.0",
     "react-powerplug": "^0.1.4",
-    "react-scroll": "^1.7.6"
+    "react-scroll": "^1.7.6",
+    "sntp": "^3.0.1"
   },
   "keywords": [
     "gatsby"

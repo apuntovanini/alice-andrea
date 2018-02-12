@@ -1,26 +1,6 @@
 import React from 'react';
-import { Form, FormSubmit } from '@uidu/forms';
-import { Input, Select } from '@uidu/inputs';
-
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-};
 
 export default function Hero() {
-  const handleSubmit = model => {
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...model }),
-    })
-      .then(() => alert('Success!'))
-      .catch(error => alert(error));
-
-    // e.preventDefault();
-  };
-
   return (
     <section className="fdb-block pb-md-0">
       <div className="container">
@@ -33,50 +13,55 @@ export default function Hero() {
             <p className="small">(scoperto 10 gg fa)</p>
           </div>
           <div className="col-md-6">
-            <Form
-              name="contact"
-              handleSubmit={handleSubmit}
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              footerRenderer={({ canSubmit }) => (
-                <FormSubmit
-                  canSubmit={canSubmit}
-                  className="btn btn-block"
-                  labeL="Invia"
-                />
-              )}
-            >
-              <Input type="hidden" name="form-name" value="contact" />
-              <Input
-                name="name"
-                placeholder="Pinco pallino"
-                label="Il tuo nome"
-              />
-              <Input
-                name="email"
-                type="email"
-                placeholder="info@12052018.it"
-                label="Lasciaci una mail"
-              />
-              <Select
-                name="rsvp"
-                options={[
-                  { id: 1, name: <p>Certooone</p> },
-                  { id: 2, name: <p>No</p> },
-                ]}
-                label="Sarai dei nostri?"
-                exposed
-              />
-              <Select
-                name="dietary"
-                options={[
-                  { id: 1, name: <p>Certooone</p> },
-                  { id: 2, name: <p>No</p> },
-                ]}
-                label="Sarai dei nostri?"
-                exposed
-              />
-            </Form>
+            <form name="contact" netlify>
+              <div className="row align-items-center">
+                <div className="col mt-4">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Company Name"
+                  />
+                </div>
+              </div>
+              <div className="row align-items-center mt-4">
+                <div className="col">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div className="row align-items-center mt-4">
+                <div className="col">
+                  <input
+                    type="password"
+                    className="form-control"
+                    placeholder="Password"
+                  />
+                </div>
+                <div className="col">
+                  <input
+                    type="password"
+                    className="form-control"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+              </div>
+              <div className="row justify-content-start">
+                <div className="col">
+                  <div className="form-check">
+                    <label className="form-check-label">
+                      <input type="checkbox" className="form-check-input" />
+                      I Read and Accept{' '}
+                      <a href="https://www.froala.com">Terms and Conditions</a>
+                    </label>
+                  </div>
+
+                  <button className="btn mt-4">Submit</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

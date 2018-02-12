@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@uidu/forms": "^0.5.51",
-    "@uidu/inputs": "^0.9.58",
     "aproba": "^1.2.0",
     "asn1": "^0.2.3",
     "assert-plus": "^1.0.0",

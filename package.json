@@ -25,7 +25,8 @@
     "react-powerplug": "^0.1.4",
     "react-scroll": "^1.7.6",
     "sntp": "^3.0.1",
-    "sshpk": "^1.13.1"
+    "sshpk": "^1.13.1",
+    "wide-align": "^1.1.2"
   },
   "keywords": [
     "gatsby"

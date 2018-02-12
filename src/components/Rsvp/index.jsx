@@ -15,11 +15,12 @@ export default function Hero() {
           <div className="col-md-6">
             <form name="contact" netlify>
               <div className="row align-items-center">
-                <div className="col mt-4">
+                <div className="col">
                   <input
+                    name="name"
                     type="text"
                     className="form-control"
-                    placeholder="Company Name"
+                    placeholder="Il tuo nome"
                   />
                 </div>
               </div>
@@ -27,14 +28,15 @@ export default function Hero() {
                 <div className="col">
                   <input
                     type="email"
+                    name="email"
                     className="form-control"
-                    placeholder="Email"
+                    placeholder="La tua email"
                   />
                 </div>
               </div>
               <div className="row align-items-center mt-4">
                 <div className="col">
-                  <input
+                  <select
                     type="password"
                     className="form-control"
                     placeholder="Password"
@@ -48,19 +50,7 @@ export default function Hero() {
                   />
                 </div>
               </div>
-              <div className="row justify-content-start">
-                <div className="col">
-                  <div className="form-check">
-                    <label className="form-check-label">
-                      <input type="checkbox" className="form-check-input" />
-                      I Read and Accept{' '}
-                      <a href="https://www.froala.com">Terms and Conditions</a>
-                    </label>
-                  </div>
-
-                  <button className="btn mt-4">Submit</button>
-                </div>
-              </div>
+              <button className="btn mt-4">Submit</button>
             </form>
           </div>
         </div>

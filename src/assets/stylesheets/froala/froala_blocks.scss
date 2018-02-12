@@ -5,8 +5,8 @@
 
 .fdb-block {
   // font-family: 'Roboto', sans-serif;
-  font-size: $font-size;
-  line-height: $line-height;
+  // font-size: $font-size;
+  // line-height: $line-height;
   @include font-smoothing(on);
   text-rendering: optimizelegibility;
   padding: $block-padding 0;

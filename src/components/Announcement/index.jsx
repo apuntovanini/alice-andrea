@@ -11,7 +11,7 @@ export default function Hero() {
               <i>Noi ci si sposa, voi che fate?</i>
             </p>
             <div className="row justify-content-center mb-5">
-              <div className="col-md-6">
+              <div className="col-md-10 col-lg-8 col-xl-6">
                 <div className="card-deck">
                   <div className="card border-0 text-center">
                     <h1 className="mb-0">12</h1>

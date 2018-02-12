@@ -1,6 +1,7 @@
 import React from 'react';
 import donsimo from '../../assets/images/donsimo.jpg';
 import dongiu from '../../assets/images/dongiu.jpg';
+import { LinkToAnchor } from '../../utils';
 import { Hover } from 'react-powerplug';
 
 export default function Hero() {
@@ -29,7 +30,12 @@ export default function Hero() {
                 <h3>
                   <strong>Dove confermo la partecipazione?</strong>
                 </h3>
-                <p>Puoi completare il form qui sotto.</p>
+                <p>
+                  Puoi completare il{' '}
+                  <LinkToAnchor to="rsvp" smooth>
+                    form qui sotto
+                  </LinkToAnchor>.
+                </p>
                 <h3 className="mt-4 mt-xl-5">
                   <strong>Dove (e quando) si svolge la cerimonia?</strong>
                 </h3>
@@ -61,8 +67,8 @@ export default function Hero() {
                   </strong>
                 </h3>
                 <p>
-                  Ciao, se non ci conosci e sei qui per caso vieni a trovarci
-                  (ma ricordati l'IBAN)
+                  Ciao, se non ci conosci noi siamo Alice e Andrea, sei qui per
+                  caso vieni a trovarci (ma ricordati l'IBAN)
                 </p>
                 <h3 className="mt-4 mt-xl-5">
                   <strong>Dove si mangia?</strong>

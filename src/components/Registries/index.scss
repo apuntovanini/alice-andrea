@@ -1,0 +1,22 @@
+.gifts {
+  &:hover {
+    .wanted-gift {
+      transition: all 0.3s ease;
+      transform: scale(1.5);
+    }
+    .unwanted-gift {
+      transition: all 0.3s ease;
+      transform: scale(0.5);
+    }
+  }
+}
+
+.unwanted-gift {
+  transition: all 0.3s ease;
+}
+
+.wanted-gift {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: visible !important;
+}

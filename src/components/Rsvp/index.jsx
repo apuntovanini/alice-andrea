@@ -13,9 +13,15 @@ export default function Hero() {
             <p className="small">(scoperto 10 gg fa)</p>
           </div>
           <div className="col-md-6">
-            <form name="contact" netlify>
+            <form
+              name="rsvp"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="rsvp" />
               <div className="row align-items-center">
                 <div className="col">
+                  <label>Identificati</label>
                   <input
                     name="name"
                     type="text"
@@ -26,6 +32,7 @@ export default function Hero() {
               </div>
               <div className="row align-items-center mt-4">
                 <div className="col">
+                  <label>Indirizzo email</label>
                   <input
                     type="email"
                     name="email"
@@ -36,18 +43,32 @@ export default function Hero() {
               </div>
               <div className="row align-items-center mt-4">
                 <div className="col">
+                  <label>Confermi la tua presenza?</label>
                   <select
-                    type="password"
-                    className="form-control"
-                    placeholder="Password"
-                  />
+                    className="custom-select"
+                    style={{ WebkitAppearance: 'none' }}
+                    defaultValue=""
+                  >
+                    <option value="">Seleziona...</option>
+                    <option value="1">😎 &nbsp; Ci sono / siamo!</option>
+                    <option value="2">
+                      😭 &nbsp; Purtroppo non riesco / riusciamo
+                    </option>
+                  </select>
                 </div>
                 <div className="col">
-                  <input
-                    type="password"
-                    className="form-control"
-                    placeholder="Confirm Password"
-                  />
+                  <label>Hai qualche allergia/intolleranza?</label>
+                  <select
+                    className="custom-select"
+                    style={{ WebkitAppearance: 'none' }}
+                    defaultValue=""
+                  >
+                    <option value="">Seleziona...</option>
+                    <option value="no">No, mangio di tutto</option>
+                    <option value="celiaco">Celiaco</option>
+                    <option value="lattosio">Intollerante al lattosio</option>
+                    <option value="altro">Altro, mandateci una mail</option>
+                  </select>
                 </div>
               </div>
               <button className="btn mt-4">Submit</button>

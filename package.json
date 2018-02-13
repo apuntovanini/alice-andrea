@@ -10,6 +10,7 @@
     "asynckit": "^0.4.0",
     "boom": "^7.1.1",
     "bootstrap": "^4.0.0",
+    "clipboard": "^1.7.1",
     "console-control-strings": "^1.1.0",
     "cryptiles": "^4.1.1",
     "delayed-stream": "^1.0.0",
@@ -28,6 +29,7 @@
     "react-scroll": "^1.7.6",
     "sntp": "^3.0.1",
     "sshpk": "^1.13.1",
+    "sweetalert": "^2.1.0",
     "wide-align": "^1.1.2"
   },
   "keywords": [

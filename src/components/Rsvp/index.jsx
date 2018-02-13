@@ -45,13 +45,14 @@ export default function Hero() {
                 <div className="col">
                   <label>Confermi la tua presenza?</label>
                   <select
+                    name="confirm"
                     className="custom-select"
                     style={{ WebkitAppearance: 'none' }}
                     defaultValue=""
                   >
                     <option value="">Seleziona...</option>
-                    <option value="1">😎 &nbsp; Ci sono / siamo!</option>
-                    <option value="2">
+                    <option value="si">😎 &nbsp; Ci sono / siamo!</option>
+                    <option value="no">
                       😭 &nbsp; Purtroppo non riesco / riusciamo
                     </option>
                   </select>
@@ -59,6 +60,7 @@ export default function Hero() {
                 <div className="col">
                   <label>Hai qualche allergia/intolleranza?</label>
                   <select
+                    name="allergie"
                     className="custom-select"
                     style={{ WebkitAppearance: 'none' }}
                     defaultValue=""

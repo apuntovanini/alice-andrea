@@ -48,7 +48,7 @@ export default function Hero() {
                     name="confirm"
                     className="custom-select"
                     style={{ WebkitAppearance: 'none' }}
-                    defaultValue=""
+                    // defaultValue=""
                   >
                     <option value="">Seleziona...</option>
                     <option value="si">😎 &nbsp; Ci sono / siamo!</option>
@@ -63,7 +63,7 @@ export default function Hero() {
                     name="allergie"
                     className="custom-select"
                     style={{ WebkitAppearance: 'none' }}
-                    defaultValue=""
+                    // defaultValue=""
                   >
                     <option value="">Seleziona...</option>
                     <option value="no">No, mangio di tutto</option>

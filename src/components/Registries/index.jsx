@@ -16,10 +16,7 @@ export default class Registries extends Component {
       },
     });
 
-    clipboard.on('success', function(e) {
-      console.info('Action:', e.action);
-      console.info('Text:', e.text);
-      console.info('Trigger:', e.trigger);
+    clipboard.on('success', e => {
       swal(
         'Yeah!',
         'Ora puoi incollarlo nel tuo homebanking perchè sei una persona moderna, e inviare un bonifico perchè sei una persona buona',

@@ -13,7 +13,32 @@ export default function Hero() {
             <p className="small">(scoperto 10 gg fa)</p>
           </div>
           <div className="col-md-6">
+            <div className="row mb-4">
+              <div className="col-sm-6">
+                <address>
+                  <strong>Alice Ghidoni</strong>
+                  <br />
+                  <a href="mailto:aliceghidoni91@gmail.com">
+                    aliceghidoni91@gmail.com
+                  </a>
+                  <br />
+                  <tel>+393883616571</tel>
+                </address>
+              </div>
+              <div className="col-sm-6">
+                <address>
+                  <strong>Andrea Vanini</strong>
+                  <br />
+                  <a href="mailto:andrea.vanini@uidu.org">
+                    andrea.vanini@uidu.org
+                  </a>
+                  <br />
+                  <tel>+393803306560</tel>
+                </address>
+              </div>
+            </div>
             <form
+              method="post"
               name="rsvp"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
@@ -73,7 +98,7 @@ export default function Hero() {
                   </select>
                 </div>
               </div>
-              <button className="btn mt-4">Submit</button>
+              <button className="btn mt-4 px-5">Invia</button>
             </form>
           </div>
         </div>

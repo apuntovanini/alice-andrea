@@ -47,7 +47,7 @@ export default class Registries extends Component {
           <div className="row-50" />
 
           <div className="row gifts">
-            <div className="col-sm-4 text-left">
+            <div className="col-sm-4 text-left mb-4 mb-md-0">
               <div className="fdb-box unwanted-gift">
                 <img
                   alt="Alice & Andrea, lista viaggio"
@@ -66,7 +66,7 @@ export default class Registries extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-sm-4 text-left">
+            <div className="col-sm-4 text-left mb-4 mb-md-0">
               <div className="fdb-box wanted-gift">
                 <img alt="image" className="img-fluid" src={busta} />
                 <div className="content">
@@ -82,12 +82,12 @@ export default class Registries extends Component {
                     }}
                     className="btn btn-primary btn-block"
                   >
-                    Premi qui per copiare
+                    Salva l'IBAN
                   </button>
                 </div>
               </div>
             </div>
-            <div className="col-sm-4 text-left">
+            <div className="col-sm-4 text-left mb-4 mb-md-0">
               <div className="fdb-box unwanted-gift">
                 <img alt="image" className="img-fluid" src={amazon} />
 

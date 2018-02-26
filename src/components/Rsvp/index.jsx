@@ -39,11 +39,11 @@ export default function Hero() {
             </div>
             <form
               method="post"
-              name="rsvp"
+              name="rsvp-form"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="form-name" value="rsvp" />
+              <input type="hidden" name="form-name" value="rsvp-form" />
               <div className="row align-items-center">
                 <div className="col">
                   <label>Identificati</label>

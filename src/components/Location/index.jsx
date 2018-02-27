@@ -8,8 +8,8 @@ import {
   Marker,
 } from 'react-google-maps';
 
-import restaurant from '../../assets/images/001-wine.png';
-import church from '../../assets/images/002-wedding-couple.png';
+import restaurant from '../../assets/images/restaurant.svg';
+import church from '../../assets/images/church.svg';
 
 const defaultMapStyles = [
   {
@@ -200,14 +200,19 @@ const MyMapComponent = compose(
   console.log(props);
   return (
     <GoogleMap
-      defaultZoom={8}
-      defaultCenter={{ lat: 45.6928999, lng: 9.8427065 }}
+      defaultZoom={11}
+      defaultCenter={{ lat: 45.6528999, lng: 9.9427065 }}
       defaultOptions={{ styles: defaultMapStyles }}
     >
       <Marker
         onClick={props.onToggleOpen}
         position={{ lat: 45.6928999, lng: 9.8427065 }}
-        options={{ icon: church }}
+        options={{
+          icon: {
+            url: church,
+            scaledSize: new google.maps.Size(31, 43),
+          },
+        }}
       >
         {props.isOpen && (
           <InfoWindow onCloseClick={props.onToggleOpen}>
@@ -228,7 +233,12 @@ const MyMapComponent = compose(
       <Marker
         onClick={props.onToggleFoodOpen}
         position={{ lat: 45.5994277, lng: 10.0562345 }}
-        options={{ icon: restaurant }}
+        options={{
+          icon: {
+            url: restaurant,
+            scaledSize: new google.maps.Size(31, 43),
+          },
+        }}
       >
         {props.isFoodOpen && (
           <InfoWindow onCloseClick={props.onToggleFoodOpen}>

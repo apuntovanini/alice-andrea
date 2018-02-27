@@ -13,7 +13,7 @@ export default function Supporters() {
       <div className="row pt-5 pb-3">
         <div className="col-12 text-center">
           <p>
-            <strong>Fortune 100 companies are using our products</strong>
+            <strong>Questo matrimonio è fortemente apprezzato da</strong>
           </p>
         </div>
       </div>

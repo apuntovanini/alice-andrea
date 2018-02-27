@@ -15,24 +15,6 @@ export default function Hero() {
             </p>
           </div>
         </div>
-
-        <div className="row mt-4">
-          <div className="col text-center">
-            <p className="text-h3">
-              <a href="https://www.froala.com">
-                <Twitter />
-              </a>{' '}
-              &nbsp; &nbsp;
-              <a href="https://www.froala.com">
-                <Facebook />
-              </a>{' '}
-              &nbsp; &nbsp;
-              <a href="https://www.froala.com">
-                <Instagram />
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
     </footer>
   );

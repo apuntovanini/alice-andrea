@@ -1,5 +1,6 @@
 import React from 'react';
 import header from '../../assets/images/header.jpg';
+import logo from '../../assets/images/logo.png';
 
 export default function Hero() {
   return (
@@ -7,6 +8,11 @@ export default function Hero() {
       <div className="container">
         <div className="row">
           <div className="col">
+            <p className="row justify-content-center mb-5">
+              <div className="col-4 col-sm-4 col-md-4 col-lg-2">
+                <img src={logo} className="img-fluid" />
+              </div>
+            </p>
             <p className="text-h2 text-center mb-5">
               <i>Noi ci si sposa, voi che fate?</i>
             </p>
@@ -79,21 +85,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <p className="card-columns">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by their
-              place far far away. Far far away, behind the word mountains, far
-              from the countries Vokalia and Consonantia, there live the blind
-              texts. Separated they live in Bookmarksgrove right at the coast of
-              the Semantics, a large language ocean. A small river named Duden
-              flows by their place far far away. Far far away, behind the word
-              mountains, far from the countries Vokalia and Consonantia, there
-              live the blind texts. Separated they live in Bookmarksgrove right
-              at the coast of the Semantics, a large language ocean. A small
-              river named Duden flows by their place far far away.
-            </p>
           </div>
         </div>
       </div>

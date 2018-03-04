@@ -10,7 +10,7 @@
     "asynckit": "^0.4.0",
     "boom": "^7.1.1",
     "bootstrap": "^4.0.0",
-    "clipboard": "^1.7.1",
+    "clipboard": "^2.0.0",
     "console-control-strings": "^1.1.0",
     "cryptiles": "^4.1.1",
     "delayed-stream": "^1.0.0",
@@ -35,15 +35,14 @@
     "sweetalert": "^2.1.0",
     "wide-align": "^1.1.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "format":
+      "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

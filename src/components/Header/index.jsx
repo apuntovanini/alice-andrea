@@ -38,17 +38,12 @@ const Header = () => (
             </li>
             <li className="nav-item">
               <LinkToAnchor className="nav-link" to="location" smooth>
-                Location
+                Dove
               </LinkToAnchor>
             </li>
             <li className="nav-item">
               <LinkToAnchor className="nav-link" to="registries" smooth>
-                Registries
-              </LinkToAnchor>
-            </li>
-            <li className="nav-item">
-              <LinkToAnchor className="nav-link" to="guestbook" smooth>
-                Guestbook
+                Lista nozze
               </LinkToAnchor>
             </li>
           </ul>

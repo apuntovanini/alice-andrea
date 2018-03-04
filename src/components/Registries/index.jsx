@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Clipboard from 'clipboard';
+import ClipboardJs from 'clipboard';
 import swal from 'sweetalert';
 
 import './index.scss';
@@ -10,7 +10,7 @@ import busta from '../../assets/images/busta.jpg';
 
 export default class Registries extends Component {
   componentDidMount() {
-    const clipboard = new Clipboard(this.iban, {
+    const clipboard = new ClipboardJs(this.iban, {
       text: trigger => {
         return 'IT55X0301503200000003617969';
       },

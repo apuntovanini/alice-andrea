@@ -18,8 +18,8 @@ export default function Hero() {
                 <address>
                   <strong>Alice Ghidoni</strong>
                   <br />
-                  <a href="mailto:aliceghidoni91@gmail.com">
-                    aliceghidoni91@gmail.com
+                  <a href="mailto:alice.ghidoni91@gmail.com">
+                    alice.ghidoni91@gmail.com
                   </a>
                   <br />
                   <tel>+393883616571</tel>

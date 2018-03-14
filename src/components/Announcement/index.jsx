@@ -4,7 +4,7 @@ import logo from '../../assets/images/logo.png';
 
 export default function Hero() {
   return (
-    <section className="fdb-block">
+    <section className="fdb-block pb-0">
       <div className="container">
         <div className="row">
           <div className="col">

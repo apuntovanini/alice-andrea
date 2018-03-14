@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Element } from 'react-scroll';
-
+import divider from '../assets/images/divider.png';
 import {
   Header,
   Hero,
@@ -30,6 +30,9 @@ const TemplateWrapper = ({ children }) => (
     <Element name="announcement">
       <Announcement />
     </Element>
+    <div className="d-flex justify-content-center">
+      <img src={divider} className="img-fluid" />
+    </div>
     <Element name="faq">
       <Faq />
     </Element>

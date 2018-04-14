@@ -40,14 +40,15 @@ export default class Registries extends Component {
       <section className="fdb-block team-1">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-6 mb-3 mb-md-0">
+            <div className="col-lg-6 col-xl-5 mb-3 mb-lg-0">
               <h3>
                 <strong>Se volete contribuire alla festa</strong>
               </h3>
             </div>
-            <div className="col-md-6 text-right">
+            <div className="col-lg-6 col-xl-7 text-lg-right">
               <p className="text-h3 mt-0">
-                Vi lasciamo un paio di opzioni con libertà
+                Vi lasciamo un paio di opzioni con libertà,{' '}
+                <span className="text-danger">diciamo no ai vasi Ming</span>
               </p>
             </div>
           </div>

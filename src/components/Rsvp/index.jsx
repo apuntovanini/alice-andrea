@@ -67,7 +67,7 @@ export default function Hero() {
                 </div>
               </div>
               <div className="row align-items-center mt-4">
-                <div className="col">
+                <div className="col-sm-6 mb-4">
                   <label>Confermi la tua presenza?</label>
                   <select
                     name="confirm"
@@ -82,7 +82,7 @@ export default function Hero() {
                     </option>
                   </select>
                 </div>
-                <div className="col">
+                <div className="col-sm-6 mb-4">
                   <label>Hai qualche allergia/intolleranza?</label>
                   <select
                     name="allergie"

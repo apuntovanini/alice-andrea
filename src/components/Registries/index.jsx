@@ -15,17 +15,25 @@ export default class Registries extends Component {
         return 'IT55X0301503200000003617969';
       },
     });
-
-    clipboard.on('success', e => {
-      swal(
-        'Yeah!',
-        'Ora puoi incollarlo nel tuo homebanking perchè sei una persona moderna, e inviare un bonifico perchè sei una persona buona',
-        'success',
-      );
-
-      e.clearSelection();
-    });
   }
+
+  wantedGift = e => {
+    e.preventDefault();
+    swal(
+      'Yeah!',
+      "Hai fatto la scelta giusta! Ora puoi incollare l'IBAN IT55X0301503200000003617969 nel tuo homebanking perchè sei una persona moderna, e inviare un bonifico perchè sei una persona buona ;)",
+      'success',
+    );
+  };
+
+  unwantedGift = e => {
+    e.preventDefault();
+    swal(
+      'Ooops!',
+      "Forse intendevi cliccare sulla busta! :) ad ogni modo questo è l'IBAN per contribuire alla nostra festa: IT55X0301503200000003617969",
+      'error',
+    );
+  };
 
   render() {
     return (
@@ -47,11 +55,15 @@ export default class Registries extends Component {
           <div className="row-50" />
 
           <div className="row gifts">
-            <div className="col-sm-4 text-left mb-4 mb-md-0">
-              <div className="fdb-box unwanted-gift">
+            <div className="col-md-4 text-left mb-4 mb-md-0">
+              <a
+                href="#"
+                onClick={this.unwantedGift}
+                className="fdb-box unwanted-gift d-block"
+              >
                 <img
                   alt="Alice & Andrea, lista viaggio"
-                  className="img-fluid"
+                  className="w-100"
                   src={tibet}
                 />
 
@@ -64,11 +76,18 @@ export default class Registries extends Component {
                     Harrer (o di Brad Pitt per i profani)
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
-            <div className="col-sm-4 text-left mb-4 mb-md-0">
-              <div className="fdb-box wanted-gift">
-                <img alt="image" className="img-fluid" src={busta} />
+            <div className="col-md-4 text-left mb-4 mb-md-0">
+              <a
+                ref={c => {
+                  this.iban = c;
+                }}
+                href="#"
+                onClick={this.wantedGift}
+                className="fdb-box wanted-gift d-block"
+              >
+                <img alt="image" className="w-100" src={busta} />
                 <div className="content">
                   <h3>
                     <strong>La bbusta!</strong>
@@ -76,20 +95,19 @@ export default class Registries extends Component {
                   <p>Per tutto il resto c'è Mastercard.</p>
                   <p>Causale: Alice e Andrea - 12.05.2018</p>
                   <p>IBAN: IT55X0301503200000003617969</p>
-                  <button
-                    ref={c => {
-                      this.iban = c;
-                    }}
-                    className="btn btn-primary btn-block"
-                  >
+                  <button className="btn btn-primary btn-block">
                     Salva l'IBAN
                   </button>
                 </div>
-              </div>
+              </a>
             </div>
-            <div className="col-sm-4 text-left mb-4 mb-md-0">
-              <div className="fdb-box unwanted-gift">
-                <img alt="image" className="img-fluid" src={amazon} />
+            <div className="col-md-4 text-left mb-4 mb-md-0">
+              <a
+                href="#"
+                onClick={this.unwantedGift}
+                className="fdb-box unwanted-gift d-block"
+              >
+                <img alt="image" className="w-100" src={amazon} />
 
                 <div className="content">
                   <h3>
@@ -100,7 +118,7 @@ export default class Registries extends Component {
                     completare la nostra casa.
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>

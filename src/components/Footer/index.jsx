@@ -6,6 +6,16 @@ import { Twitter, Facebook, Instagram } from 'react-feather';
 export default function Hero() {
   return (
     <footer className="fdb-block footer-large">
+      <div className="row justify-content-center mb-5">
+        <iframe
+          src="https://open.spotify.com/embed?uri=spotify:user:1166812714:playlist:2fsBeDoBif12JGdspaiTa8&theme=white"
+          width="300"
+          height="80"
+          frameBorder="0"
+          allowtransparency="true"
+        />
+      </div>
+
       <div className="d-flex justify-content-center mb-3">
         <img src={divider} className="img-fluid" />
       </div>

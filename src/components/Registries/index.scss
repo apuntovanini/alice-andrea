@@ -1,22 +1,45 @@
+@import '~bootstrap/scss/bootstrap';
+
 .gifts {
-  &:hover {
-    .wanted-gift {
-      transition: all 0.3s ease;
-      transform: scale(1.05);
-    }
-    .unwanted-gift {
-      transition: all 0.3s ease;
-      transform: scale(0.5);
+  @include media-breakpoint-up(lg) {
+    &:hover {
+      .wanted-gift {
+        transition: all 0.3s ease;
+        transform: scale(1.05);
+      }
+      .unwanted-gift {
+        transition: all 0.3s ease;
+        transform: scale(0.5);
+        &:after {
+          content: 'x';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          font-size: 167px;
+          margin-top: -150px;
+          text-align: center;
+          width: 100%;
+          color: red;
+        }
+      }
     }
   }
 }
 
 .unwanted-gift {
   transition: all 0.3s ease;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .wanted-gift {
   transition: all 0.3s ease;
   position: relative;
   overflow: visible !important;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }

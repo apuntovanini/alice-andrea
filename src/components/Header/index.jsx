@@ -2,14 +2,21 @@ import React from 'react';
 // import Link from 'gatsby-link';
 
 import { Link } from 'react-scroll';
-
+import logo from '../../assets/images/logo.png';
 import { LinkToAnchor } from '../../utils';
 
 const Header = () => (
   <header>
     <div className="container">
       <nav className="navbar navbar-expand-md">
-        <a className="navbar-brand" href="https://www.froala.com">
+        <a className="navbar-brand" href="/">
+          <img
+            src={logo}
+            // width="30"
+            height="30"
+            className="d-inline-block align-top mr-3"
+            alt=""
+          />
           Alice & Andrea
         </a>
 

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Element } from 'react-scroll';
 import divider from '../assets/images/divider.png';
+import favicon from '../assets/images/logo.png';
 import {
   Header,
   Hero,
@@ -24,7 +25,9 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
+    >
+      <link rel="icon" href={favicon} />
+    </Helmet>
     <Header />
     <Hero />
     <Element name="announcement">

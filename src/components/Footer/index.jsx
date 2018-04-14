@@ -12,7 +12,7 @@ export default function Hero() {
           width="300"
           height="80"
           frameBorder="0"
-          allowtransparency="true"
+          allowTransparency="true"
         />
       </div>
 
